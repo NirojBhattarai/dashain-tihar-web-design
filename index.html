@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashain & Tihar Festival</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes float {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes backgroundFloat {
+        0% {
+          background-position: center center;
+          transform: scale(1);
+        }
+        50% {
+          background-position: center top;
+          transform: scale(1);
+        }
+        100% {
+          background-position: center center;
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-r from-orange-500 to-red-500">
+    <!-- Background music -->
+    <audio autoplay loop>
+      <source src="./img/MangalDhoon.mp3" type="audio/mp3" />
+      Your browser does not support the audio tag.
+    </audio>
+
+    <section
+      class="bg-cover bg-center relative min-h-full animate-backgroundFloat"
+      style="
+        background-image: url(./img/durga-puja-wallpaper-preview.jpg);
+        background-attachment: fixed;
+        animation: backgroundFloat 15s infinite ease-in-out;
+      "
+    >
+      <div class="bg-red-900 bg-opacity-50 absolute inset-0"></div>
+
+      <!-- Main Celebration Text -->
+      <div class="relative text-center py-20 z-10 space-y-6 animate-fadeIn">
+        <h1 class="text-6xl font-bold animate-bounce text-yellow-300">
+          Dashain & Tihar Celebrations
+        </h1>
+        <p class="text-3xl font-semibold text-yellow-100">
+          Honoring our traditions, faith, and the triumph of good over evil.
+        </p>
+      </div>
+
+      <!-- Images of Tika and Deepawali -->
+      <div
+        class="bottom-0 left-0 right-0 flex justify-center mb-10 space-x-20 z-15"
+      >
+        <div class="relative">
+          <img
+            src="./img/tika.jpg"
+            alt="Tika"
+            class="h-60 w-96 rounded-xl shadow-lg animate-float"
+          />
+          <p class="text-lg font-semibold text-yellow-300 text-center">
+            Dashain
+          </p>
+        </div>
+        <div class="relative">
+          <img
+            src="./img/tihar.jpg"
+            alt="Deepawali"
+            class="h-60 w-96 rounded-lg shadow-lg animate-float"
+          />
+          <p class="text-lg font-semibold text-yellow-300 text-center">Tihar</p>
+        </div>
+      </div>
+    </section>
+    <div class="font-bold mx-auto text-center text-emrald-50">
+      <p>
+        May the festival of Dashain & Tihar bring peace and prosperity to all!
+      </p>
+    </div>
+  </body>
+</html>
