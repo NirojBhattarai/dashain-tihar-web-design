@@ -3,45 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashain & Tihar Festival</title>
+    <title>Dashain & Tihar</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      @keyframes float {
-        0% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(-10px);
-        }
-        100% {
-          transform: translateY(0);
-        }
-      }
-
-      @keyframes fadeIn {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-
-      @keyframes backgroundFloat {
-        0% {
-          background-position: center center;
-          transform: scale(1);
-        }
-        50% {
-          background-position: center top;
-          transform: scale(1);
-        }
-        100% {
-          background-position: center center;
-          transform: scale(1);
-        }
-      }
-    </style>
   </head>
   <body class="bg-gradient-to-r from-orange-500 to-red-500">
     <!-- Background music -->
@@ -50,54 +13,70 @@
       Your browser does not support the audio tag.
     </audio>
 
+    <!-- Navbar -->
+    <nav class="text-white py-3">
+      <div class="container mx-auto flex justify-start items-center">
+        <h1 class="text-3xl font-bold mx-2">Nepal</h1>
+        <marquee>
+          या देवी सर्वभूतेषु शक्तिरूपेण संस्थिता। नमस्तस्यै नमस्तस्यै नमस्तस्यै
+          नमो नमः॥ विजया दशमी, शुभ दीपावली अनि छठ पर्वको पावन अवसरमा यहाँलाई
+          हार्दिक मंगलमय शुभकामना। आशा छ, यी महान चाडपर्वहरुले तपाईंको जीवनमा
+          सुख, शान्ति, समृद्धि र सुस्वास्थ्यको आगमन गरून्। शुभकामनासहित, तपाईंको
+          प्रत्येक दिन उज्यालो र सफल रहोस्।
+        </marquee>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
     <section
-      class="bg-cover bg-center relative min-h-full animate-backgroundFloat"
-      style="
-        background-image: url(./img/durga-puja-wallpaper-preview.jpg);
-        background-attachment: fixed;
-        animation: backgroundFloat 15s infinite ease-in-out;
-      "
+      class="bg-contain bg-center relative text-white"
+      style="background-image: url('./img/durga-puja-wallpaper-preview.jpg')"
     >
       <div class="bg-red-900 bg-opacity-50 absolute inset-0"></div>
-
-      <!-- Main Celebration Text -->
-      <div class="relative text-center py-20 z-10 space-y-6 animate-fadeIn">
-        <h1 class="text-6xl font-bold animate-bounce text-yellow-300">
-          Dashain & Tihar Celebrations
-        </h1>
-        <p class="text-3xl font-semibold text-yellow-100">
+      <div class="container mx-auto py-20 text-center relative">
+        <h1 class="text-5xl font-bold mb-4">Celebrating Dashain & Tihar</h1>
+        <p class="text-xl mb-6">
           Honoring our traditions, faith, and the triumph of good over evil.
         </p>
       </div>
+    </section>
 
-      <!-- Images of Tika and Deepawali -->
+    <!-- Image Section -->
+    <section class="mt-6 mx-3">
       <div
-        class="bottom-0 left-0 right-0 flex justify-center mb-10 space-x-20 z-15"
+        class="bottom-0 left-0 right-0 flex justify-center mb-10 space-x-5 z-15"
       >
         <div class="relative">
           <img
             src="./img/tika.jpg"
-            alt="Tika"
-            class="h-60 w-96 rounded-xl shadow-lg animate-float"
+            alt="Dashain Tika"
+            class="h-60 w-80 rounded-xl shadow-lg"
           />
-          <p class="text-lg font-semibold text-yellow-300 text-center">
-            Dashain
+          <p class="text-lg font-semibold text-yellow-100 text-center">
+            Dashain Tika
           </p>
         </div>
+
         <div class="relative">
           <img
             src="./img/tihar.jpg"
-            alt="Deepawali"
-            class="h-60 w-96 rounded-lg shadow-lg animate-float"
+            alt="Tihar"
+            class="h-60 w-80 rounded-xl shadow-lg"
           />
-          <p class="text-lg font-semibold text-yellow-300 text-center">Tihar</p>
+          <p class="text-lg font-semibold text-yellow-100 text-center">Diyo</p>
+        </div>
+
+        <div class="relative">
+          <img
+            src="./img/linge-ping.jpg"
+            alt="Tihar"
+            class="h-60 w-80 rounded-xl shadow-lg"
+          />
+          <p class="text-lg font-semibold text-yellow-100 text-center">
+            Linge Ping
+          </p>
         </div>
       </div>
     </section>
-    <div class="font-bold mx-auto text-center text-emrald-50">
-      <p>
-        May the festival of Dashain & Tihar bring peace and prosperity to all!
-      </p>
-    </div>
   </body>
 </html>
